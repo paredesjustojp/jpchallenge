@@ -1,2 +1,2 @@
 #! /bin/sh
-nmp start
+npm start
