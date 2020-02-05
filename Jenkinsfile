@@ -20,7 +20,7 @@ pipeline {
      
     stage('deploy') {
       steps {
-         sh 'ansible-playbook npm.yml'
+        echo 'go to your ansible server and execute ansible-playbook npm.yml'
       }
     }      
   }
