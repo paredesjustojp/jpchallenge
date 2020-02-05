@@ -6,14 +6,14 @@
   },
   "test": {
     "username": "root",
-    "password": "yb#yLPIR$AP=Im$@D3saS$Ychyl",
+    "password": "XO",
     "database": "database_test",
     "host": "172.31.26.165",
     "dialect": "mysql"
   },
   "production": {
     "username": "root",
-    "password": "yb#yLPIR$AP=Im$@D3saS$Ychyl",
+    "password": "XO",
     "database": "database_production",
     "host": "172.31.26.165",
     "dialect": "mysql"
