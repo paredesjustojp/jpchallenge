@@ -1,0 +1,8 @@
+- hosts: webservers
+  tasks:
+    - name : staring npm
+      command: /home/ec2-user/jenkins/workspace/NPM/npm.sh
+      args:
+        chdir: /home/ec2-user/jenkins/workspace/NPM/
+        creates: /path/to/database
+~
