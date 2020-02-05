@@ -1,0 +1,18 @@
+- name: despligue de infratesructura
+  hosts: localhost
+  tasks:
+    - name: create  cloudformation stack
+      cloudformation:
+        stack_name: "gorilla-challenge"
+        state: "present"
+        region: "eu-west-1"
+        disable_rollback: true
+        template_url: "https://postnetcr.s3.amazonaws.com/postnet/ELB_BCK.json"
+        template_parameters:
+          VpcId: "vpc-fd65539b"
+          NodeImageId: "ami-04ff679b4bca0bf38"
+          Subnets: "subnet-0b51316d,subnet-6427542c,subnet-c3329099"
+          KeyName: "key_ssh"
+          SSHLocation : "0.0.0.0/0"
+        tags:
+          Stack: "ansible-cloudformation"
